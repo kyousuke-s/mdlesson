@@ -124,10 +124,10 @@ Q.最新のリモートリポジトリの状況をローカルに反映させる
 
 <!-- 2 -->
 Q.正しい文章宣言のタグはどれか
-1. <!DOCUTYPE html>
-1. <!DOCTYPE html>
-1. <DOCTYPE html>
-1. <DOCUTYPE html>
+1. &lt;!DOCUTYPE html&gt;
+1. &lt;!DOCTYPE html&gt;
+1. &lt;DOCTYPE html&gt;
+1. &lt;DOCUTYPE html&gt;
 
 <!-- 3 -->
 Q.正しい画像表現のタグはどれか
