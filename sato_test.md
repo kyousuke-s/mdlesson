@@ -33,7 +33,7 @@ Q.フォルダを作成するコマンドは？
 <!-- cat -->
 Q.既存のファイルの内容を確認するコマンドは？
 
-## vim 10問　2択のうち正しいほうを選択してください（1問1点）
+## vim 10問　2択のうち当てはまる方を選択してください（1問1点）
 ***
 
 <!-- 2 -->
@@ -181,7 +181,7 @@ Q.次のうち正しいマークアップはどれか
 <!-- 3 -->
 Q.HTML内でコメントを書く方法として正しいのはどれか
 1. &lt;-  -&gt;
-1. &lt;!-  -!&gt;
+1. //!--  --//
 1. &lt;!--  --&gt;
 1. &lt;--  --&gt;
 
@@ -195,75 +195,163 @@ Q.文中で改行するためのタグはどれか
 ## css 10問 (1問1点)
 ***
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 2 -->
+Q.CSSは何の略か
+1. Coding Style sheets
+1. Cascading Style Sheets
+1. Client Style Sheets
+1. Creative Style Sheets
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 1 -->
+Q.positionプロパティの既定値はどれか
+1. static
+1. relative
+1. fixed
+1. absolute
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 1 -->
+Q.box-shadow: 0 2px 3px black;において0は何を表すか
+1. 影のx方向へのずれ具合
+1. 影のy方向へのずれ具合
+1. 影の透明度
+1. 影のボケ具合
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 4 -->
+Q.「相対」「絶対」を表す英単語の組み合わせとして正しいものはどれか
+1. 相対 → absolute、絶対 → sticky
+1. 相対 → sticky、絶対 → absolute
+1. 相対 → absolute、絶対 → relative
+1. 相対 → relative、絶対 → absolute
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 2 -->
+Q.リンクの下線を消すためのプロパティは何か
+1. text-align
+1. text-decoration
+1. link
+1. underline
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 4 -->
+Q.「その要素にカーソルがのったとき」にスタイルを適用できる擬似クラスはどれか
+1. :on
+1. :over
+1. :above
+1. :hover
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 2 -->
+Q.文字を右に寄せるための宣言はどれか
+1. font-align: right
+1. text-align: right
+1. text-aling: right
+1. font-align: rigth
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 4 -->
+Q.文字の間隔を指定するためのプロパティはどれか
+1. letter-lead
+1. letter-space
+1. letter-leading
+1. letter-spacing
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 3 -->
+Q.box-sizing: border-box;について正しい記述はどれか
+1. widthにborderは含まれるがpaddingは含まれない。
+1. widthにpaddingは含まれるがborderは含まれない。
+1. widthにpaddingもborderも含まれる。
+1. widthにpaddingもborderも含まれない。
 
-<!--  -->
-Q.
-1. 
-1. 
-1. 
-1. 
+<!-- 2 -->
+Q.css内でコメントを書くときの記述方法はどれか
+1. &lt;!-- --&gt;
+1. /* */
+1. &lt;/ /&gt;
+1. /- -/
 
-## Java 5問 (1問10点)
+## Java 4問 (1答5点)
 ***
+
+<!-- 3行目の変数名ｌ、11行目のprint（lnがないので改行されない） -->
+Q.下記の記述で間違っている2か所はどこか(例：〇行目の〇〇)
+
+```
+ 1  public class Sample{
+ 2    public static void main(String[] args){
+ 3      for(int l=0;l<5;l++){
+ 4        for(int j=0;j<5;j++){
+ 5          if(j<i){
+ 6            System.out.print(" ");
+ 7          }else{
+ 8            System.out.print("*");
+ 9          }
+10        }
+11        System.out.print();
+12      }
+13    }
+14  }
+```
+
+<!-- ①String ②case ③break -->
+Q.下記の記述の①、②、③に当てはまるものは何か
+
+```
+ 1 import java.util.*;
+ 2 public class Sample{
+ 3   public static void main(String[] args){
+ 4     System.out.print("1つ目の整数xの値を入力してください>");
+ 5     int x=new Scanner(System.in).nextInt();
+ 6     System.out.print("2つ目の整数yの値を入力してください>");
+ 7     int y=new Scanner(System.in).nextInt();
+ 8     System.out.print("演算子(+,-,*,/,%)を半角記号で入力してください>");
+ 9     ① ope=new java.util.Scanner(System.in).nextLine();
+10
+11     switch (ope){
+12       ② "+":
+13         System.out.println("x+y="+(x+y));
+14         ③;
+15       ② "-":
+16         System.out.println("x-y="+(x-y));
+17         ③;
+18       ② "*":
+19         System.out.println("x*y="+(x*y));
+20         ③;
+21       ② "/":
+22         System.out.println("x/y="+(x/y));
+23         ③;
+24       default:
+25         System.out.println("x%y="+(x%y));
+26         ③;
+27   }
+28 }
+```
+
+<!-- 4行目の[10,20,30,40,50] , 6行目のnums[5] -->
+Q.下記の記述で間違っている2か所はどこか (例：〇行目の〇〇)
+
+```
+ 1  public class Sample{  
+ 2    public static void main(String[] args)  
+ 3  
+ 4      int[] nums=[10,20,30,40,50];  
+ 5  
+ 6      nums[1]=nums[2]+nums[5];  
+ 7      nums[3]=nums[2]+nums[4];  
+ 8  
+ 9      System.out.println(nums[1]);  
+10     System.out.println(nums[3]);  
+11    }  
+12  }
+```
+
+<!-- ①int ②? ③: -->
+Q.下記の記述の①、②、③に当てはまるものは何か（7行目は3項演算子）
+
+```
+ 1  public class Sample{
+ 2    public static void main(String[] args){
+ 3      System.out.print("整数A:");
+ 4      ① a=new Scanner(System.in).nextInt();
+ 5      System.out.print("整数B:");
+ 6      ① b=new Scanner(System.in).nextInt();
+ 7      ① min= a < b ② a ③ b;
+ 8      System.out.println("小さいほうの値は"+min+"です");
+ 9    }
+10  }
+```
