@@ -292,34 +292,35 @@ Q1.下記の記述で間違っている2か所はどこか(例：〇行目の〇
 Q2.下記の記述の①、②、③に当てはまるものは何か
 
 ```
- 1 import java.util.*;
- 2 public class Sample{
- 3   public static void main(String[] args){
- 4     System.out.print("1つ目の整数xの値を入力してください>");
- 5     int x=new Scanner(System.in).nextInt();
- 6     System.out.print("2つ目の整数yの値を入力してください>");
- 7     int y=new Scanner(System.in).nextInt();
- 8     System.out.print("演算子(+,-,*,/,%)を半角記号で入力してください>");
- 9     ① ope=new java.util.Scanner(System.in).nextLine();
+ 1  import java.util.*;
+ 2  public class Sample{
+ 3    public static void main(String[] args){
+ 4      System.out.print("1つ目の整数xの値を入力してください>");
+ 5      int x=new Scanner(System.in).nextInt();
+ 6      System.out.print("2つ目の整数yの値を入力してください>");
+ 7      int y=new Scanner(System.in).nextInt();
+ 8      System.out.print("演算子(+,-,*,/,%)を半角記号で入力してください>");
+ 9      ① ope=new java.util.Scanner(System.in).nextLine();
 10
-11     switch (ope){
-12       ② "+":
-13         System.out.println("x+y="+(x+y));
-14         ③;
-15       ② "-":
-16         System.out.println("x-y="+(x-y));
-17         ③;
-18       ② "*":
-19         System.out.println("x*y="+(x*y));
-20         ③;
-21       ② "/":
-22         System.out.println("x/y="+(x/y));
-23         ③;
-24       default:
-25         System.out.println("x%y="+(x%y));
-26         ③;
-27   }
-28 }
+11      switch (ope){
+12        ② "+":
+13          System.out.println("x+y="+(x+y));
+14          ③;
+15        ② "-":
+16          System.out.println("x-y="+(x-y));
+17          ③;
+18        ② "*":
+19          System.out.println("x*y="+(x*y));
+20          ③;
+21        ② "/":
+22          System.out.println("x/y="+(x/y));
+23          ③;
+24        default:
+25          System.out.println("x%y="+(x%y));
+26          ③;
+27      }
+28    }
+29  }
 ```
 
 <!-- 4行目の[10,20,30,40,50] , 6行目のnums[5] -->
